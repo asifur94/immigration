@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- font -->
+	<link rel="stylesheet" href="assets/fonts/stylesheet.css">
+	<!-- normalize css -->
+	<link rel="stylesheet" href="assets/css/normalize.css">
+	<!-- bootstrap css -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<!-- style css -->
+	<link rel="stylesheet" href="style.css">
+	<!-- responsive css -->
+	<link rel="stylesheet" href="assets/css/responsive.css">
+	<!-- modernizer js -->
+	<script src="assets/js/modernizr-3.12.0.js"></script>
+	
+
+	<title>Canada Immigration </title>
+</head>
+
+<body>
+	<header class="header header-bg py-3 bg-light">
+		<div class="container">
+			<div class="row">
+				<nav class="navbar navbar-expand-lg bg-body-tertiary">
+				  <div class="container-fluid">
+				    <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt=""></a>
+				    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				      <span class="navbar-toggler-icon"></span>
+				    </button>
+				    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+				      <div class="navbar-nav">
+				        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+				        <a class="nav-link" href="about.html">About</a>
+				        <a class="nav-link" href="file-status.html">Visa Status</a>
+				        <a class="nav-link" href="visa-score.html">Visa ranking</a>
+				        <a class="text-decoration-none border py-2 px-3 text-black" href="apply-visa.html">Visa Application</a>
+				      </div>
+				    </div>
+				  </div>
+				</nav>
+			</div>	
+	</header>
+	<!-- section hero -->
+
+	<!-- apply for visa -->
+	<section class="apply_for_visa section__padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="application_step">
+						<ul>
+							<li class="active" id="form1">1. Submit Application Online</li>
+							<li id="form2">2. Passport Data</li>
+							<li id="form3">3. Receive Approved Visa</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<form id="step-form">
+						<!-- Step 1: Personal Details -->
+						<div class="step" id="step1">
+							<div class="application_form">
+									<h3>Personal Details</h3>
+									<div class="application_form_grid">
+										<div class="single_data_field">
+											<label for="last_name">Family/Last Name *</label>
+											<input type="text" class="form-control">
+											<em>Enter Your Last name exactly as shown in your passport</em>
+										</div>
+			
+										<div class="single_data_field">
+											<label for="last_name">First and Middle Name *</label>
+											<input type="text" class="form-control">
+											<em>Enter Your first and middle name as shown in your passport</em>
+										</div>
+			
+										<div class="single_data_field">
+											<label for="gender">Gender *</label>
+											<select name="" id="gender" class="form-control">
+												<option value="">Select Gender</option>
+												<option value="">Male</option>
+												<option value="">Female</option>
+												<option value="">Transgender</option>
+											</select>
+										</div>
+			
+										<div class="single_data_field">
+											<label for="gender">Date of Birth *</label>
+											<input type="date" class="form-control">
+										</div>
+			
+										<div class="single_data_field">
+											<label for="gender">Place of Birth *</label>
+											<input type="text" class="form-control">
+											<em>Enter your City of state of Brith as shown in your passport</em>
+										</div>
+										<div class="single_data_field">
+											<label for="gender"> Country of Birth *</label>
+											<select name="" id="gender" class="form-control">
+												<option value="">Select Gender</option>
+												<option value="">Male</option>
+												<option value="">Female</option>
+												<option value="">Transgender</option>
+											</select>
+										</div>
+
+										<div class="single_data_field">
+											<label for="gender">Email Address *</label>
+											<input type="email" class="form-control">
+										</div>
+
+										<div class="single_data_field">
+											<label for="gender">Confirm Email Address *</label>
+											<input type="email" class="form-control">
+										</div>
+			
+										
+										<div class="single_data_field">
+											<label for="gender">marital Status *</label>
+											<select name="" id="gender" class="form-control">
+												<option value="">Select</option>
+												<option value="">Married</option>
+												<option value="">Unmarried</option>
+												<option value="">Widow</option>
+											</select>
+										</div>
+									</div>
+								<div class="captcha_button px-3">
+									<div class="g-recaptcha" data-sitekey="6Ldbdg0TAAAAAI7KAf72Q6uagbWzWecTeBWmrCpJ"></div>
+								</div>
+							<div class="site-btn">
+								<button class="border-0 rounded-0 btn next-btn" type="button" onclick="nextStep(2)">Next</button>
+							</div>
+							</div>
+						</div>
+						
+						<!-- Step 2: Passport Data -->
+						<div class="step" id="step2" style="display: none;">
+							<div class="application_form">
+								<h3>Passport Details</h3>
+								<div class="application_form_grid">
+									<div class="single_data_field">
+										<label for="last_name">Passport/ Travel Document Type *</label>
+										<select name="" id="" class="form-control">
+											<option value="0">Select Passport or Document type</option>
+											<option value="1">S</option>
+											<option value="2">S</option>
+										</select>
+									</div>
+									<div class="single_data_field">
+										<label for="last_name">Country of Passport/ Travel Document *</label>
+										<select name="" id="" class="form-control">
+											<option value="0">Select Passport or Document type</option>
+											<option value="1">S</option>
+											<option value="2">S</option>
+										</select>
+									</div>
+							
+									<div class="single_data_field">
+										<label for="gender">Passport Travel Document Number *</label>
+										<input type="text" class="form-control">
+									</div>
+							
+									<div class="single_data_field">
+										<label for="gender">Confirm Passport Travel Document Number *</label>
+										<input type="text" class="form-control">
+									</div>
+							
+									<div class="single_data_field">
+										<label for="gender">Passport Issue Date *</label>
+										<input type="date" class="form-control">
+									</div>
+							
+									<div class="single_data_field">
+										<label for="gender">Passport Expire Date *</label>
+										<input type="date" class="form-control">
+									</div>
+								</div>
+								<div class="site-btn">
+									<button class="border-0 rounded-0 btn next-btn" type="button" onclick="nextStep(3)">Next</button>
+								</div>
+							</div>
+						</div>
+						
+						<!-- Step 3: Receive Approved Visa -->
+						<div class="step" id="step3" style="display: none;">
+							<div class="application_form">
+								<h3>No Eta required</h3>
+								<div class="application_form_grid_col">
+									<p>
+										Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim quo tempore, magnam repellat nesciunt ducimus sit error ab eius quaerat.
+									</p>
+									<h4>Documents You'll Need when you travel</h4>
+									<h4>Air Travel</h4>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, blanditiis?</p>
+									<h4>All Method of travel</h4>
+									<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae unde natus hic voluptate sint laborum facilis nulla eligendi atque non laboriosam ipsum aliquam numquam, voluptatem molestias quam aspernatur illo perferendis tempora sit nihil inventore porro! Necessitatibus temporibus neque, iusto deserunt commodi, voluptate expedita, ad ipsam eveniet alias tempora dolorem consequuntur!
+										<br>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur rerum, minima neque autem corrupti unde?
+									</p>
+								</div>
+							</div>
+							<div class="site-btn">
+								<button class="border-0 rounded-0 btn submit-btn" type="submit">Submit</button>
+							</div>
+						</div>
+					  </form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- apply for visa -->
+
+	<!-- footer -->
+	<footer class="footer section__padding bg-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="widget footer-widget">
+						<div class="site-footer-logo mb-4">
+							<a href="#"><img src="assets/img/footer_logo.png" alt=""></a>
+						</div>
+						<p>Lorem ipsum dolor sit amet.</p>
+						<p>ICAS of Canada <br>
+							Ontario AgriCentre <br>
+							100 Stone Road West, Suite 102 <br>
+							Guelph ON N1G 5L3</p>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="widget footer-widget">
+						<h4>Important Links</h4>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About us</a></li>
+							<li><a href="#">Admission</a></li>
+							<li><a href="#">University Canada</a></li>
+							<li><a href="contact.html">Contact Us</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="widget footer-widget">
+						<div class="footer__opening--time">
+							<h4>Open Times</h4>
+							<div class="footer__opening--schedule">
+								<h5>Opening Day</h5>
+								<li>Monday-Saturday: 10.00 am to 8.30 pm</li>
+								<li>Monday: 10.00 am to 6.30 pm</li>
+							</div>
+							<div class="footer__opening--schedule mt-3">
+								<h5>Vacation</h5>
+								<li>All Sunday is our vacation day</li>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- footer -->
+
+	<!-- all javascript -->
+	<script src="assets/js/Jquery-3.7.0.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+	<script src="assets/js/main.js"></script>
+	<script>
+		function nextStep(step) {
+			$(`#step${step - 1}`).hide();
+			$(`#step${step}`).show();
+			$(`#form${step - 1}`).removeClass("active");
+			$(`#form${step}`).addClass("active");
+		}
+	
+		
+	  </script>
+	</body>
+</html>
